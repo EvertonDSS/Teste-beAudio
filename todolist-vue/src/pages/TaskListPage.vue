@@ -1,16 +1,14 @@
 <template>
   <div class="container my-4">
     <h1 class="text-center mb-4">Minhas Tarefas</h1>
-  <div class="mb-4">
-  <router-link 
-    to="/tasks/add"
-    class="card p-3 d-flex align-items-center justify-content-center text-decoration-none shadow-sm rounded-3 border-0"
-    active-class="fw-bold text-success border-success"
-  >
-    <i class="bi bi-plus-circle me-2 fs-5"></i>
-    <span class="fs-6">Nova Tarefa</span>
-  </router-link>
-</div>
+    <div class="mb-4">
+      <router-link to="/tasks/add"
+        class="card p-3 d-flex align-items-center justify-content-center text-decoration-none shadow-sm rounded-3 border-0"
+        active-class="fw-bold text-success border-success">
+        <i class="bi bi-plus-circle me-2 fs-5"></i>
+        <span class="fs-6">Nova Tarefa</span>
+      </router-link>
+    </div>
 
     <div class="row g-3">
       <div class="col-12 col-sm-6 col-md-4" v-for="task in tasks" :key="task.id">
