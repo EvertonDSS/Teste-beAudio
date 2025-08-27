@@ -36,6 +36,8 @@ class TaskController {
       const newTask = await TaskService.createTask(req.body);
       res.status(201).json(newTask);
     } catch (error) {
+      console.log(error);
+      
       throw new InternalServerError();
     }
   }

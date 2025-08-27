@@ -10,6 +10,7 @@ const router = useRouter();
 const task = ref({
   title: "",
   description: "",
+  time: "",
   completed: false
 });
 

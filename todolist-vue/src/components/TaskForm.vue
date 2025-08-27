@@ -16,6 +16,19 @@
           </div>
 
           <div class="mb-3">
+            <label for="time" class="form-label">Time</label>
+            <input
+              id="time"
+              v-model="form.time"
+              type="text"
+              class="form-control"
+              placeholder="Digite o time"
+              required
+            />
+          </div>
+
+          
+          <div class="mb-3">
             <label for="description" class="form-label">Descrição</label>
             <textarea
               id="description"
@@ -26,6 +39,7 @@
             ></textarea>
           </div>
 
+          
           <button type="submit" class="btn btn-success">
             {{ form.id ? "Atualizar" : "Adicionar" }}
           </button>
@@ -47,6 +61,7 @@ const emit = defineEmits(["save"]);
 const form = ref({
   title: "",
   description: "",
+  time: "",
   completed: false
 });
 

@@ -12,6 +12,16 @@
         </label>
       </div>
 
+       <div class="card-body py-2">
+        <p class="card-text mb-0">
+          <strong>Time:</strong>
+          <br>
+          <span style="white-space: pre-line;">
+            {{ task.time }}
+          </span>
+        </p>
+      </div>
+
       <div class="card-body py-2">
         <p class="card-text mb-0">
           <strong>Descrição:</strong>
@@ -21,6 +31,7 @@
           </span>
         </p>
       </div>
+
 
       <div class="card-footer d-flex justify-content-between align-items-center bg-transparent border-top pt-2 pb-3">
         <span class="badge d-flex align-items-center gap-1"

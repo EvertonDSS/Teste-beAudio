@@ -14,6 +14,7 @@ class TaskRepository {
   }
 
   async create(task) {
+
     const newTask = await Task.create(task);
     return newTask;
   }
